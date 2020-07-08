@@ -8,8 +8,10 @@ import { Container } from '@components/global';
 const NotFoundPage = () => (
   <Layout>
     <Container>
-      <h1>PAGINA NO ENCONTRADA</h1>
-      <img src={ErrorImg} alt="Error404" />
+      <section class="errorSection">
+        <h1 class="errorTitle">PAGINA NO ENCONTRADA</h1>
+        <img class="errorImg" src={ErrorImg} alt="Error404" />
+      </section>
     </Container>
   </Layout>
 );
