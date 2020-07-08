@@ -6,6 +6,7 @@
   "author": "Ajay NS <ajay.ns@outlook.com>",
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
+    "bootstrap": "^4.5.0",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-alias-imports": "^1.0.5",
@@ -21,6 +22,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-anchor-link-smooth-scroll": "^1.0.11",
+    "react-bootstrap": "^1.1.1",
     "react-collapsible": "^2.6.0",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
