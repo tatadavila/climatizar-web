@@ -1,142 +1,132 @@
 import React from 'react';
-import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 
-import { Section, Container } from '@components/global';
+import { Section } from '@components/global';
 
 const About = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        art_fast: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
+  <Section id="nosotros">
+    <Timeline lineColor={'#ddd'}>
+      <TimelineItem
+        key="001"
+        dateText="11/2010 – Present"
+        style={{ color: '#e86971' }}
+      >
+        <h3>Title, Company</h3>
+        <h4>Subtitle</h4>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+      </TimelineItem>
+      <TimelineItem
+        key="002"
+        dateText="04/2009 – 11/2010"
+        dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
+        bodyContainerStyle={{
+          background: '#ddd',
+          padding: '20px',
+          borderRadius: '8px',
+          boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+        }}
+      >
+        <h3 style={{ color: '#61b8ff' }}>Title, Company</h3>
+        <h4 style={{ color: '#61b8ff' }}>Subtitle</h4>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+      </TimelineItem>
+      <TimelineItem
+        key="003"
+        dateComponent={
+          <div
+            style={{
+              display: 'block',
+              float: 'left',
+              padding: '10px',
+              background: 'rgb(150, 150, 150)',
+              color: '#fff',
+            }}
+          >
+            11/2008 – 04/2009
+          </div>
         }
-
-        art_learn: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_ideas: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <Section id="about">
-        <Container>
-          <Grid>
-            <div>
-              <h2>Speed past the competition</h2>
-              <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
-            </Art>
-          </Grid>
-          <Grid inverse>
-            <Art>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
-            </Art>
-            <div>
-              <h2>Nothing new to learn here</h2>
-              <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
-              </p>
-            </div>
-          </Grid>
-          <Grid>
-            <div>
-              <h2>Grow and build your ideas</h2>
-              <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
-                <br />
-                <br />
-                Gatsby is fast in every way that matters.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
-            </Art>
-          </Grid>
-        </Container>
-      </Section>
-    )}
-  />
+      >
+        <h3>Title, Company</h3>
+        <h4>Subtitle</h4>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+      </TimelineItem>
+      <TimelineItem
+        key="004"
+        dateText="08/2008 – 11/2008"
+        dateInnerStyle={{ background: '#76bb7f' }}
+      >
+        <h3>Title, Company</h3>
+        <h4>Subtitle</h4>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+        <p>
+          Est incididunt sint eu minim dolore mollit velit velit commodo ex
+          nulla exercitation. Veniam velit adipisicing anim excepteur nostrud
+          magna nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+          reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis
+          Lorem est.
+        </p>
+      </TimelineItem>
+    </Timeline>
+  </Section>
 );
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-gap: 40px;
-  text-align: right;
-  align-items: center;
-  justify-items: center;
-  margin: 24px 0;
-
-  ${props =>
-    props.inverse &&
-    `
-    text-align: left;
-    grid-template-columns: 2fr 3fr;
-  `}
-
-  h2 {
-    margin-bottom: 16px;
-  }
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    grid-template-columns: 1fr;
-    text-align: left;
-    margin-bottom: 96px;
-
-    &:last-child {
-      margin-bottom: 24px;
-    }
-
-    ${props =>
-      props.inverse &&
-      `
-        ${Art} {
-          order: 2;
-        }
-    `}
-  }
-`;
-
-const Art = styled.figure`
-  margin: 0;
-  max-width: 380px;
-  width: 100%;
-`;
 
 export default About;

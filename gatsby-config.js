@@ -33,19 +33,26 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Climatizar del Caribe`,
+        short_name: `CDC`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,
         display: `minimal-ui`,
-        icon: `static/favicon.ico`,
+        icon: `static/favicon.png`,
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`average`, `prata\:400,700`, `Press Start 2P`],
+        fonts: [
+          `average`,
+          `prata\:400,700`,
+          `Press Start 2P`,
+          `Seymour One`,
+          `Roboto`,
+          `Exo 2`,
+        ],
       },
     },
     {

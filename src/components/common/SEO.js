@@ -2,14 +2,16 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
-  url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
-  img: '',
-  twitterId: '@ajayns_',
-  facebookId: '',
+  description:
+    'Sitio web de la compañia Climatizar del Caribe LTDA. ' +
+    'Servicios de venta, instalación y reparación de aires acondicionados',
+  title: 'Climatizar del Caribe',
+  url: 'http://www.climatizardelcaribe.com',
+  author: 'Tatiana Davila',
+  keywords: ['aire acondicionado', 'Barranquilla', 'Climatizar'],
+  img: '@images/team/tats.png',
+  twitterId: '@creativitad',
+  githubId: '@tatadavila',
 };
 
 const SEO = () => {

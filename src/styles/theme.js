@@ -1,7 +1,8 @@
 const theme = {
   font: {
-    primary: `'Prata', serif`,
-    secondary: `'Average', serif`,
+    primary: `'Seymour One', sans-serif`,
+    secondary: `'Roboto', sans-serif`,
+    title: `'Exo 2', sans-serif`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',
@@ -20,7 +21,7 @@ const theme = {
       light: '#564F62',
       regular: '#211E26',
     },
-    primary: '#8bd8ed',
+    primary: '#45A8E6',
   },
   screen: {
     xs: '575px',

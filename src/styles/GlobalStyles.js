@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2 {
-    font-family: ${props => props.theme.font.primary};
+    font-family: ${props => props.theme.font.title};
   }
 
   h1 {

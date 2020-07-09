@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
+// import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
   <StaticQuery
@@ -15,7 +15,7 @@ const Header = () => (
           name: { eq: "build" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1300) {
+            fluid(maxWidth: 1277) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -30,19 +30,18 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
             <Text>
+              <h3>
+                Ingeniería aplicada a
+                <br />
+                la climatización.
+              </h3>
               <h1>
-                Fast in
+                Ventas y Servicio
                 <br />
-                every way
+                Tecnico
                 <br />
-                that matters
+                Tel: 310-6308024
               </h1>
-              <br />
-              <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
-              </p>
             </Text>
           </Grid>
         </Container>
@@ -56,7 +55,7 @@ const HeaderWrapper = styled.header`
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 128px;
+    padding-top: 107px;
   }
 `;
 
@@ -66,7 +65,6 @@ const Art = styled.figure`
 
   > div {
     width: 120%;
-    margin-bottom: -4.5%;
 
     @media (max-width: ${props => props.theme.screen.md}) {
       width: 100%;
@@ -78,7 +76,8 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 64px;
+  grid-gap: 97px;
+  ${'' /* background-color: yellow; */}
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
@@ -86,25 +85,40 @@ const Grid = styled.div`
 
     > ${Art} {
       order: 2;
+      ali
     }
   }
 `;
 
 const Text = styled.div`
-  justify-self: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
+  > h3 {
+    font-style: italic;
+  }
+
+  > h1 {
+    border-radius: 20px;
+    background-color: #2cf2ed;
+    padding: 7px;
+  }
   @media (max-width: ${props => props.theme.screen.md}) {
-    justify-self: start;
+    height: 120%;
+    padding: 10px;
   }
 `;
 
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  text-decoration: none;
+// const StyledExternalLink = styled(ExternalLink)`
+//   color: inherit;
+//   text-decoration: none;
 
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
-  }
-`;
+//   &:hover {
+//     color: ${props => props.theme.color.black.regular};
+//   }
+// `;
 
 export default Header;
