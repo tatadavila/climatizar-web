@@ -1,10 +1,9 @@
 # CLIMATIZAR DEL CARIBE LTDA
 
-[http://]
+[https://www.climatizardelcaribe.com]
+
 _Website for business_
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Tatiana Dávila** - *Trabajo Inicial* - [villanuevand](https://github.com/TatsDev)
+* **Tatiana Dávila** - *Complete Development* - [TatsDev](https://github.com/TatsDev)
