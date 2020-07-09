@@ -38,7 +38,7 @@ const Header = () => (
               <h1>
                 Ventas y Servicio
                 <br />
-                Tecnico
+                Técnico
                 <br />
                 Tel: 310-6308024
               </h1>

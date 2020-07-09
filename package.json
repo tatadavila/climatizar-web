@@ -35,10 +35,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build",  
+    "heroku-postbuild": "gatsby build",
+    "start": "gatsby serve",
     "dev": "gatsby develop",
-    "start": "npm run dev",
-    "format": "prettier --write \"src/**/*.js\"",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "clean": "rm -rf .cache && rm -rf public"
   },
   "devDependencies": {

@@ -30,6 +30,7 @@ export const NavListWrapper = styled.div`
       `
         flex-direction: column;
         margin-top: 1em;
+        align-items: center;
 
         > ${NavItem} {
           margin: 0;
