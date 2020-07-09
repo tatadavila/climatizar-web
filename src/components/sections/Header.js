@@ -113,6 +113,10 @@ const Text = styled.div`
 
     > a {
       text-align: center;
+
+      > p {
+        font-size: 37px;
+      }
     }
   }
 
