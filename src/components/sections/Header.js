@@ -35,13 +35,17 @@ const Header = () => (
                 <br />
                 la climatización.
               </h3>
-              <h1>
-                Ventas y Servicio
+              <span>
+                <h1>
+                  Ventas y Servicio
+                  <br />
+                  Técnico
+                </h1>
                 <br />
-                Técnico
-                <br />
-                Tel: 310-6308024
-              </h1>
+                <a href="Tel:+573106308024">
+                  <p class="call-button">+573106308024</p>
+                </a>
+              </span>
             </Text>
           </Grid>
         </Container>
@@ -52,10 +56,10 @@ const Header = () => (
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
-  padding-top: 96px;
+  padding-top: 137px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 107px;
+    padding-top: 117px;
   }
 `;
 
@@ -76,16 +80,15 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 97px;
+  grid-gap: 117px;
   ${'' /* background-color: yellow; */}
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 80px;
+    grid-gap: 37px;
 
     > ${Art} {
       order: 2;
-      ali
     }
   }
 `;
@@ -99,13 +102,20 @@ const Text = styled.div`
 
   > h3 {
     font-style: italic;
+    text-align: center;
   }
 
-  > h1 {
+  > span {
     border-radius: 20px;
     background-color: #2cf2ed;
     padding: 7px;
+    text-align: center;
+
+    > a {
+      text-align: center;
+    }
   }
+
   @media (max-width: ${props => props.theme.screen.md}) {
     height: 120%;
     padding: 10px;
