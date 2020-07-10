@@ -21,6 +21,8 @@ const theme = {
       light: '#564F62',
       regular: '#211E26',
     },
+    box: 'rgba(174, 209, 238, 0.7);',
+    phone: '#C70C44',
     primary: '#45A8E6',
   },
   screen: {

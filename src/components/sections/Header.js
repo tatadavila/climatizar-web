@@ -30,11 +30,10 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
             <Text>
-              <h3>
-                Ingeniería aplicada a
-                <br />
-                la climatización.
-              </h3>
+              <h4>
+                Ingeniería aplicada
+                <br />a la climatización.
+              </h4>
               <span>
                 <h1>
                   Ventas y Servicio
@@ -43,7 +42,7 @@ const Header = () => (
                 </h1>
                 <br />
                 <a href="Tel:+573106308024">
-                  <p class="call-button">+573106308024</p>
+                  <p>+573106308024</p>
                 </a>
               </span>
             </Text>
@@ -56,10 +55,10 @@ const Header = () => (
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
-  padding-top: 137px;
+  padding-top: 117px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 117px;
+    padding-top: 77px;
   }
 `;
 
@@ -98,31 +97,36 @@ const Text = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
 
-  > h3 {
+  > h4 {
     font-style: italic;
     text-align: center;
   }
 
   > span {
     border-radius: 20px;
-    background-color: #2cf2ed;
+    background-color: ${props => props.theme.color.box};
+    ${'' /* background-color:  */}
     padding: 7px;
     text-align: center;
 
     > a {
       text-align: center;
+      text-decoration: none;
 
       > p {
         font-size: 37px;
+        color: #c70c44;
       }
     }
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
     height: 120%;
-    padding: 10px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

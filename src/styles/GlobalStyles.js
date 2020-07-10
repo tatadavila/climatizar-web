@@ -19,6 +19,9 @@ const GlobalStyles = createGlobalStyle`
   h1, h2 {
     font-family: ${props => props.theme.font.title};
   }
+  h4 {
+    font-family: ${props => props.theme.font.primary};
+  }
 
   h1 {
     ${props => props.theme.font_size.xlarge};
@@ -30,6 +33,10 @@ const GlobalStyles = createGlobalStyle`
 
   h3 {
     ${props => props.theme.font_size.large};
+  }
+
+  h4 {
+    ${props => props.theme.font_size.regular};
   }
 
   p {

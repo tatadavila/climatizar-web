@@ -4,7 +4,7 @@ export const Container = styled.div`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 37px;
+  padding: 0 27px;
   ${'' /* background-color: pink; */}
 
   @media (min-width: ${props => props.theme.screen.xs}) {
