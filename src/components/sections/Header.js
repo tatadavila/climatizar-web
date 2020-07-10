@@ -55,7 +55,7 @@ const Header = () => (
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
-  padding-top: 117px;
+  padding: 107px 0 47px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 77px;
