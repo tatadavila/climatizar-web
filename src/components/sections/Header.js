@@ -41,9 +41,7 @@ const Header = () => (
                   Técnico
                 </h1>
                 <br />
-                <a href="Tel:+573106308024">
-                  <p>+573106308024</p>
-                </a>
+                <a href="Tel:+573106308024">+573106308024</a>
               </span>
             </Text>
           </Grid>
@@ -114,11 +112,8 @@ const Text = styled.div`
     > a {
       text-align: center;
       text-decoration: none;
-
-      > p {
-        font-size: 37px;
-        color: #c70c44;
-      }
+      font-size: 37px;
+      color: #c70c44;
     }
   }
 
